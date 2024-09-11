@@ -1,6 +1,7 @@
+import com.sun.source.tree.WhileLoopTree;
+
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,5 +44,29 @@ public class Main {
             System.out.println(lista_liczb_z_klawiatury.get(i));
         }
         System.out.println(lista_liczb_z_klawiatury);
+        //losowanie list bez powtorzen
+        ArrayList<Integer> lista_liczb_wylosowanych_bez_powtorzen=new ArrayList<>();
+        for (int i = 0; i < 6; i++) {
+            int liczba=(int)(Math.random()*100+1);
+            while (lista_liczb_wylosowanych_bez_powtorzen.contains(liczba)){
+                liczba=(int)(Math.random()*100+1);
+            }
+            lista_liczb_wylosowanych_bez_powtorzen.add(liczba);
+        }
+        System.out.println("Lista bez powtorzen");
+        System.out.println(lista_liczb_wylosowanych_bez_powtorzen);
+        //losowanie do zbioru
+        HashSet<Integer> zbiorLosowychBezPowtorzen=new HashSet<>();
+            while (lista_liczb_wylosowanych_bez_powtorzen.size() < 6);{
+            int liczba = (int) (Math.random() * 100 + 1);
+            zbiorLosowychBezPowtorzen.add(liczba);
+
+        }
+        System.out.println(zbiorLosowychBezPowtorzen);
+        /*
+        listy: uporzadkowane, indeksowane, moga powtarzac
+        zbiory:zazwyczaj nieuporzadkowane nieindeksowane bez powtorzen
+         */
+        LinkedList<Integer> trafione = new LinkedList<>();
     }
 }
