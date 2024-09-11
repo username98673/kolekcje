@@ -12,7 +12,7 @@ public class Main {
             tablica_liczb_losowych[i]=(int)(Math.random()*100+1);//od 1 do 100
         }
         //wypisywanie talicy na ekranie
-        System.out.println("Wyloseeeeeeeeeeeeeeeeeeeeeeeeeeeeeowania tablica; ");
+        System.out.println("Wylosowana tablica; ");
         for (int element:tablica_liczb_losowych) {
             //(typ nazwa:nazwakolekcjii)
             System.out.print(element+", ");
