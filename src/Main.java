@@ -1,6 +1,8 @@
 import com.sun.source.tree.WhileLoopTree;
 
+
 import java.lang.reflect.Array;
+
 import java.util.*;
 
 public class Main {
@@ -68,5 +70,11 @@ public class Main {
         zbiory:zazwyczaj nieuporzadkowane nieindeksowane bez powtorzen
          */
         LinkedList<Integer> trafione = new LinkedList<>();
+        for (Integer wpisana:lista_liczb_z_klawiatury) {
+            if (lista_liczb_wylosowanych_bez_powtorzen.contains(wpisana)) {
+                trafione.add(wpisana);
+            }
+        }
+        System.out.println(trafione);
     }
 }
