@@ -47,6 +47,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
+        ArrayList<Integer> losowe=wylosujListe(6);
+        wypiszListe(losowe);
+        ArrayList<Integer> wpisane=wstawLiczbyDoListy(6);
+        wypiszListe(wpisane);
+        LinkedList<Integer> trafione=zwrocElementyZObuList(losowe,wpisane);
+        wypiszListe(trafione);
     }
 }
