@@ -1,4 +1,4 @@
-public class Main {ddddddddd
+public class Main {
     public static void main(String[] args) {
 
         System.out.println("Hello world!");
@@ -12,7 +12,7 @@ public class Main {ddddddddd
             tablica_liczb_losowych[i]=(int)(Math.random()*100+1);//od 1 do 100
         }
         //wypisywanie talicy na ekranie
-        System.out.println("Wylosowania tablica; ");
+        System.out.println("Wyloseeeeeeeeeeeeeeeeeeeeeeeeeeeeeowania tablica; ");
         for (int element:tablica_liczb_losowych) {
             //(typ nazwa:nazwakolekcjii)
             System.out.print(element+", ");
