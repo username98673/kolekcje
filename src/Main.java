@@ -42,5 +42,6 @@ public class Main {
         for (int i = 0; i < lista_liczb_z_klawiatury.size(); i++) {
             System.out.println(lista_liczb_z_klawiatury.get(i));
         }
+        System.out.println(lista_liczb_z_klawiatury);
     }
 }
